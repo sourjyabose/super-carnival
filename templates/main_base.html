@@ -1,0 +1,20 @@
+<html>
+  {%block head%}
+<head><title>{%block title%}{%endblock%} --SBASU</title></head>
+  {%endblock%}
+  <body>
+    {%block body%}
+    
+    
+    <center><h1>Sourjya Basu</center>
+
+    {%if content==undefined%}
+    {%for i in range(10)%}
+    <h3>Sourjya</h3>
+    {%endfor%}
+    {%endif%}
+      {{content}}
+    
+    {%endblock%}
+  </body>
+</html>
